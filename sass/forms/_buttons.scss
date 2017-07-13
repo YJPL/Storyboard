@@ -1,0 +1,62 @@
+button,
+.alt,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0 auto;
+}
+button,
+input,
+select,
+textarea {
+	font-size: 100%; /* Corrects font size not being inherited in all browsers */
+	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+	vertical-align: top; /* Improves readability and alignment in all browsers */
+}
+button {
+	line-height: normal; /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
+	overflow: visible;  /* Corrects inner spacing displayed oddly in IE6/7 */
+}
+input,
+textarea {
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)); /* Removing the inner shadow, rounded corners on iOS inputs */
+}
+button,
+html input[type="button"],
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-moz-appearance: button;
+	-webkit-appearance: button;
+	border: 0;
+	background: $color__link;
+	color: black;
+	cursor: pointer;
+	font-size: 0.8rem;
+	letter-spacing: 0.12em;
+	padding: 0.6em;
+	text-transform: uppercase;
+	width: auto;
+}
+button:hover,
+button:focus,
+.button:hover,
+.button:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="button"]:hover,
+input[type="button"]:focus {
+	color: black;
+	background-color: $color__link-hover;
+}
+button:active,
+html input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+	background-color: $color__link-active;
+}

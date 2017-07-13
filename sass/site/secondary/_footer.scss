@@ -1,0 +1,18 @@
+.site-footer {
+	background-color: $color__link; /* #99cccc $color__link or $color__background-body */
+}
+.site-info {
+	color: $color__text-main;
+	background-color: $color__background-body;
+	font-size: 10px;
+	font-size: 0.625rem;
+	line-height: 1.2;
+	padding: 8px 0 9px 0;
+	text-align: center;
+}
+.site-info a {
+	color: $color__link;
+}
+.site-info a:hover {
+	color: $color__link;
+}

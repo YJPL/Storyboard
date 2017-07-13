@@ -1,0 +1,12 @@
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-width: 1px 0 0 1px;
+  margin: 0 0 10px;
+  width: 100%;
+}
+table,
+th,
+td {
+  border: none; /* 1px solid #fefefe but none works better */
+}

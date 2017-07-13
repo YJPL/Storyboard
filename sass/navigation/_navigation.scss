@@ -1,0 +1,126 @@
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+@import "links";
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+@import "menus";
+
+/*--------------------------------------------------------------
+## Navigation
+--------------------------------------------------------------*/
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}
+
+.site-content .comment-navigation,
+.site-content .paging-navigation,
+.site-content .post-navigation
+.site-content .image-navigation {
+	margin: 0 0 1em;
+	overflow: hidden;
+}
+.site-content [class*="navigation"] {
+	overflow: hidden;
+
+    }   
+
+.nav-previous-page, 
+.image-navigation .nav-previous,
+.image-navigation .previous,
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous {
+    float: left;
+    text-align: left;
+}
+.nav-next-page,
+.image-navigation .nav-next,
+.image-navigation .next,
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {
+    float: right;
+    text-align: right;
+}
+
+/* Image navigation */
+next .meta-nav a:hover {
+	display: none;
+	color: $color__link;
+}
+
+.image-navigation .text-nav {
+	display: block;
+	text-align: center
+} 
+.image-navigation .meta-nav {
+	@include font-size(2.4);
+	color: $color__text-main;
+	background-color: transparent;
+	text-align: center;
+	padding: 4px;
+}
+
+/* pagination */
+.page-numbers,
+.nav-previous a,
+.nav-next a,
+.nav-previous-page a,
+.nav-next-page a {
+	@include font-size(0.8);
+	line-height: $font__line-height-body;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #004a66;
+    padding: 10px 12px;
+    background-color: white;
+	}
+.page-numbers a:hover,
+.nav-previous a:hover,
+.nav-next a:hover,
+.nav-previous-page a:hover,
+.nav-next-page a:hover {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: white;
+    padding: 10px 12px;
+    background-color: $color__link;
+	}
+.page-numbers,
+.prev page-numbers,
+.next page-numbers {
+	display: inline-block;
+}
+
+.story-title, .story-title a, .story-title li,
+.post-parent-title, .post-parent-title a {
+	/*font-family: Futura, "Trebuchet MS", Arial, sans-serif;*/
+	color: black;
+	
+	font-size: 0.9rem;
+	line-height: 1.2;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 12px;
+}

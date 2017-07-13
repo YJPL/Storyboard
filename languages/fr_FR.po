@@ -1,0 +1,381 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Storyboard\n"
+"POT-Creation-Date: 2017-07-07 19:27+0200\n"
+"PO-Revision-Date: 2017-07-07 19:27+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! Cette page n'existe pas."
+
+#: 404.php:22
+msgid "Nothing was found here. Maybe try one of the links below or a search?"
+msgstr "Rien trouvé qui ressemble à ça ici. Essayer une recherche?"
+
+#: 404.php:29
+msgid "Most Used Categories"
+msgstr "Catégories les plus utilisées"
+
+#: 404.php:35
+msgid "Calendar"
+msgstr "Calendrier"
+
+#. translators: %1$s: smiley
+#: 404.php:39
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Regardez dans les archives mensuelles. %1$s"
+
+#: category-portfolio.php:54 category-portfolio.php:74 home-3.php:56
+#: home-3.php:76 home-4.php:56 home-4.php:76
+#, php-format
+msgid "Permanent Link to %s"
+msgstr "Lien permanent vers %s"
+
+#: category-portfolio.php:85 home-3.php:89 home-4.php:89 index.php:47
+msgid "Page"
+msgstr "Page"
+
+#: category-portfolio.php:86 index.php:45
+msgid "Previous page"
+msgstr "Page précédente"
+
+#: category-portfolio.php:87 index.php:46
+msgid "Next page"
+msgstr "Page suivante"
+
+#: category-portfolio.php:98
+msgid "Watch all stories by:"
+msgstr "Voir tous les articles de:"
+
+#: comments.php:31
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Un commentaire sur &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s commentaires sur &ldquo;%2$s&rdquo;"
+
+#: comments.php:40 comments.php:61
+msgid "Comment navigation"
+msgstr "Parcourir les commentaires"
+
+#: comments.php:43 comments.php:64
+msgid "Older Comments"
+msgstr "Commentaires Anciens"
+
+#: comments.php:44 comments.php:65
+msgid "Newer Comments"
+msgstr "Commentaires Récents"
+
+#: comments.php:78
+msgid "Comments are closed."
+msgstr "Les commentaires sont fermés."
+
+#: footer.php:57
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#: footer.php:57
+#, php-format
+msgid "Proudly powered by %s"
+msgstr "Construit avec %s"
+
+#: footer.php:58
+msgctxt "Separator in site info."
+msgid "|"
+msgstr "|"
+
+#. Author URI of the plugin/theme
+#: footer.php:59
+msgid "http://alternatyves.com"
+msgstr "http://alternatyves.com"
+
+#: footer.php:59
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr "Thème: %1$s par %2$s."
+
+#: functions.php:61 header.php:54
+msgid "Primary Menu"
+msgstr "Menu Principal"
+
+#: functions.php:142
+msgid "Sidebar"
+msgstr "A côté"
+
+#: functions.php:152
+msgid "First Footer Widget"
+msgstr "Première colonne de bas de page"
+
+#: functions.php:154
+msgid "The first footer widget"
+msgstr "La première colonne de bas de page"
+
+#: functions.php:163
+msgid "Second Footer Widget"
+msgstr "Seconde colonne de bas de page"
+
+#: functions.php:165
+msgid "The second footer widget"
+msgstr "La seconde colonne de bas de page"
+
+#: functions.php:174
+msgid "Third Footer Widget"
+msgstr "Troisième colonne de bas de page"
+
+#: functions.php:176
+msgid "The third footer widget"
+msgstr "La troisième colonne de bas de page"
+
+#: functions.php:185
+msgid "Fourth Footer Widget"
+msgstr "Quatrième colonne de bas de page"
+
+#: functions.php:187
+msgid "The fourth footer widget"
+msgstr "La quatrième colonne de bas de page"
+
+#: functions.php:236
+msgid "Read more..."
+msgstr "Lire la suite…"
+
+#: functions.php:296 functions.php:307
+msgid "less than a minute"
+msgstr "moins d’une minute"
+
+#: functions.php:313
+msgid "almost"
+msgstr "presque"
+
+#: functions.php:313 functions.php:315
+msgid "minutes"
+msgstr "minutes"
+
+#: functions.php:315
+msgid "about a minute"
+msgstr "environ une minute"
+
+#: functions.php:315
+msgid "about"
+msgstr "a propos"
+
+#: header.php:55
+msgid "Skip to content"
+msgstr "Lire plus"
+
+#: image.php:43
+msgid "<span class=\"text-nav\">&larr; Previous image</span>"
+msgstr "<span class=“text-nav”>&larr; Image précédente</span>"
+
+#: image.php:44
+msgid "<span class=\"text-nav\">Next image &rarr;</span>"
+msgstr "<span class=“text-nav”>Image suivante &rarr;</span>"
+
+#: inc/template-tags.php:34
+#, php-format
+msgid "View all posts by %s"
+msgstr "Tous les articles de %s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:48 inc/template-tags.php:54
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:50
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Catégorie(s) %1$s"
+
+#: inc/template-tags.php:56
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Label(s) %1$s"
+
+#: inc/template-tags.php:62
+msgid "Leave a comment"
+msgstr "Laisser un message"
+
+#: inc/template-tags.php:62
+msgid "1 Comment"
+msgstr "1 Commentaire"
+
+#: inc/template-tags.php:62
+msgid "% Comments"
+msgstr "% Commentaires"
+
+#. translators: %s: Name of current post
+#: inc/template-tags.php:69 template-parts/content-page.php:34
+#, php-format
+msgid "Edit %s"
+msgstr "Modifier %s"
+
+#: index.php:45
+msgctxt "Previous page link"
+msgid "&#8592;"
+msgstr "Page précédente &#8592;"
+
+#: index.php:46
+msgctxt "Next post link"
+msgid "&#8594;"
+msgstr "Page suivante &#8594;"
+
+#: search.php:19
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Résultats de la recherche pour %s"
+
+#: single.php:26
+msgid "Previous Post"
+msgstr "Article précédent"
+
+#: single.php:26
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr "&larr;"
+
+#: single.php:27
+msgid "Next Post"
+msgstr "Article suivant"
+
+#: single.php:27
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr "&rarr;"
+
+#: template-parts/content-gallery.php:16 template-parts/content.php:17
+#, php-format
+msgid "Permalink to %s"
+msgstr "Lien vers %s"
+
+#. translators: %s: Name of current post.
+#: template-parts/content-gallery.php:49 template-parts/content-image.php:70
+#: template-parts/content-video.php:42 template-parts/content.php:53
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Lire la suite %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: template-parts/content-gallery.php:54 template-parts/content-image.php:75
+#: template-parts/content-page.php:23 template-parts/content.php:58
+msgid "Pages:"
+msgstr "Pages:"
+
+#: template-parts/content-image.php:34 template-parts/content.php:36
+#, php-format
+msgid "Average Reading Time: %s."
+msgstr "Temps moyen de lecture: %s."
+
+#: template-parts/content-none.php:16
+msgid "Nothing Found"
+msgstr "Oups ! Rien trouvé ici"
+
+#: template-parts/content-none.php:23
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Prêt à publier votre premier article ? <a href=« %1$s »>Lancez-vous</a>."
+
+#: template-parts/content-none.php:27
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Désolé, rien trouvé qui corresponde à cette requête. Réessayez en utilisant "
+"des mots différents."
+
+#: template-parts/content-none.php:33
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Il semble que la page soit vide ou que la page que vous recherchez ait été "
+"déplacée ou n'existe plus. Veuillez effectuer une nouvelle recherche."
+
+#. Theme Name of the plugin/theme
+msgid "Storyboard"
+msgstr "Storyboard"
+
+#. Theme URI of the plugin/theme
+msgid "http://film-storyboards.com/"
+msgstr "http://film-storyboards.com/"
+
+#. Description of the plugin/theme
+msgid "A lean WordPress theme for storyboards"
+msgstr "Un Thème Wordpress"
+
+#. Author of the plugin/theme
+msgid "Yves Capelle"
+msgstr "Yves Capelle"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid ""
+#~ "Posted on <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class="
+#~ "\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a><span class="
+#~ "\"byline\"> by <span class=\"author vcard\"><a class=\"url fn n\" href="
+#~ "\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+#~ msgstr ""
+#~ "Publié le <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class="
+#~ "\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a><span class="
+#~ "\"byline\"> par <span class=\"author vcard\"><a class=\"url fn n\" href="
+#~ "\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+
+#~ msgid "Portfolio Archives: %s"
+#~ msgstr "Archives du Portfolio : %s"
+
+#, fuzzy
+#~| msgid ""
+#~| "<span class=\"meta-nav\">&larr;</span> <span class=\"text-nav\">Previous "
+#~| "image</span>"
+#~ msgid ""
+#~ "<span class=\"meta-nav\">&larr;</span> <span class=\"text-nav\">Previous</"
+#~ "span>"
+#~ msgstr ""
+#~ "<span class=\"meta-nav\">←</span> <span class=\"text-nav\">Image "
+#~ "précédente</span>"
+
+#, fuzzy
+#~| msgid ""
+#~| "<span class=\"meta-nav\">&rarr;</span> <span class=\"text-nav\">Next "
+#~| "image</span>"
+#~ msgid ""
+#~ "<span class=\"meta-nav\">&rarr;</span> <span class=\"text-nav\">Next</"
+#~ "span>"
+#~ msgstr ""
+#~ "<span class=\"meta-nav\">→</span> <span class=\"text-nav\">Image "
+#~ "suivante</span>"
+
+#, fuzzy
+#~| msgid "Comment navigation"
+#~ msgid "Post navigation"
+#~ msgstr "Parcourir les commentaires"
+
+#, fuzzy
+#~| msgid ""
+#~| "<span class=\"meta-nav\">&larr;</span> <span class=\"text-nav\">Previous "
+#~| "image</span>"
+#~ msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+#~ msgstr ""
+#~ "<span class=\"meta-nav\">←</span> <span class=\"text-nav\">Image "
+#~ "précédente</span>"
+
+#~ msgid "Paged"
+#~ msgstr "Page"

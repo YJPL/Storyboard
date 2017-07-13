@@ -1,0 +1,57 @@
+/* Three columns grid */
+.three-columns { width: 100%; margin: 0em 0 0 0; }
+.three-columns:before, .three-columns:after { content: " "; display: table; }
+.three-columns:after { clear: both; }
+.three-column { float: left; margin: 0 2% 0.75em 0; width: 32%; }
+.three-column:nth-child(3n) { margin-right: 0; }
+.three-column:nth-child(3n+1) { margin-left: 0; clear: left; }
+.three-column img { width: 100%; }
+
+@media screen and (max-width: 744px) {
+.three-column  { width: 100%; }
+.three-column :nth-child(2n) { margin-right: 0; }
+.three-column :nth-child(2n+1) { margin-left: 0; clear: left; } }
+
+@media screen and (max-width: 456px) {
+.three-column  { margin: 0; width: 100%; }
+.three-column :nth-child(1n) { margin-right: 0; }
+.three-column :nth-child(1n+1) { margin-left: 0; clear: left; }
+.story-title { font-size: 10px; font-weight: 100; line-height: 1.2; } }
+
+/* Four columns grid */
+.four-columns { width: 100%; margin: 0;  }
+.four-columns:before, .four-columns:after { content: " "; display: table; }
+.four-columns:after { clear: both; }
+.four-column { float: left; margin: 0 1.333% 1.2rem 0; width: 24%; }
+.four-column:nth-child(4n) { margin-right: 0; }
+.four-column:nth-child(4n+1) { margin-left: 0; clear: left; }
+.four-column img { width: 100%;
+
+max-width: 600px; /* Width of new image */
+max-height: 371px; /* Height of new image */
+   }
+
+@media screen and (max-width: 816px) {
+.four-column { margin: 0 2% 0.625rem 0; width: 49%; }
+.four-column:nth-child(2n) { margin-right: 0; }
+.four-column:nth-child(2n+1) { margin-left: 0; clear: left; } }
+
+@media screen and (max-width: 456px) {
+.four-column { margin: 0; width: 100%; }
+.four-column:nth-child(1n) { margin-right: 0; }
+.column:nth-child(1n+1) { margin-left: 0; clear: left; }
+.story-title { font-size: 10px; font-weight: 100; line-height: 1.2; } }
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+}

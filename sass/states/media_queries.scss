@@ -1,0 +1,249 @@
+@media screen and (min-width: 312px) {
+	.wrap {
+		max-width: 264px;
+	}
+}
+@media screen and (min-width: 456px) {
+	.wrap {
+		max-width: 408px;
+	}
+	[class*="navigation"] .text-nav {
+		display: block;
+	}
+}
+@media screen and (min-width: 600px) {
+	.wrap {
+		max-width: 552px;
+	}
+	.comment-list .children {
+		margin-left: 16px;
+	}
+	.comment-author {
+		padding-left: 0;
+	}
+	.comment-content,
+	.comment-meta {
+		padding: 0;
+	}
+	article.error404 .widget {
+		float: left;
+		width: 50%;
+	}
+	article.error404 .widget_most_used_categories,
+	article.error404 .widget_archive {
+		padding-right: 0;
+		padding-left: 12px;
+	}
+	.footer-widget-1,
+	.footer-widget-2,
+	.footer-widget-3,
+	.footer-widget-4 {
+		margin: 0 8% 0 0;
+		width: 42%;
+	}
+}
+@media screen and (min-width: 744px) {
+	.wrap {
+		max-width: 696px;
+	}
+	article.error404 input[type="search"],
+	article.no-results input[type="search"] {
+		width: auto;
+	}
+}
+@media screen and (min-width: 888px) {
+	.wrap,
+	.categories-links {
+		max-width: 840px;
+	}
+	.entry-content,
+	.entry-summary,
+	article.attachment .entry-caption {
+		margin: auto;
+	}
+	.format-video .entry-content {
+		max-width: 840px;
+	}
+}
+@media screen and (min-width: 1032px) {
+	.wrap {
+		max-width: 984px;
+	}
+	.categories-links {
+		max-width: 912px;
+	}
+.entry-meta span + span:after {
+		content: "";
+	}
+
+	.entry-meta span {
+		display:  inline;
+		padding: 2px 0;
+	}
+	.entry-meta .entry-format {
+		display: block;
+	}
+	.format-video .entry-content {
+		max-width: 984px;
+	}
+	.footer-widget-1,
+	.footer-widget-2,
+	.footer-widget-3,
+	.footer-widget-4 {
+		margin: 0 1% 0 0;
+		width: 24%;
+	}
+}
+@media screen and (min-width: 1176px) {
+	.wrap {
+		max-width: 1128px;
+	}
+	.categories-links {
+		max-width: 984px;
+	}
+	.format-video .entry-content {
+		max-width: 1128px;
+	}
+}
+@media screen and (min-width: 1320px) {
+	.wrap,
+	.format-video .entry-content {
+		max-width: 1272px;
+	}
+}
+@media screen and (min-width: 1680px) {
+	.wrap {
+		max-width: 1272px;
+	}
+	.format-video .entry-content {
+		max-width: 1652px;
+	}
+}
+@media screen and (max-width: 1272px) {
+	.site-description {
+		@include font-size(0.8);
+	/*@include font-size(1);
+	position: relative;*/
+	}
+	.site-title {
+		max-width: 264px;
+		@include font-size(1.2);
+		margin: 0.3em 0  0 6px;
+	}
+	.site-description {
+		margin: 0 0 0 6px;
+	}
+	.site-branding .main-navigation {
+		@include font-size(1);
+	}
+}
+@media screen and (max-width: 988px) {
+	.site-description {
+		display: none;
+	/*@include font-size(1);
+	position: relative;*/
+	}
+}
+
+@media screen and (max-width: 600px) {
+	body, pre, code, kbd, tt, var {
+		@include font-size(0.9);
+		line-height: 1.44;
+}
+	textarea, .comment-notes, button, input, select {
+		@include font-size(0.8);
+		line-height: 1.44;
+}
+	button.toggle-comments {
+    	@include font-size(0.8);
+		padding: 0.6rem;
+		border: #00bbff 2px solid;
+}
+	.site-title {
+		@include font-size(0.9);
+}
+/*.site-branding {
+	height: 48px;
+}*/
+.site-title,
+.custom-logo,
+.logo {
+	float: none;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+.site-title {
+	max-width: 196px;
+	padding: 2em 0 2em;
+	}
+.custom-logo,
+.logo {
+	max-width: 144px;
+	height: auto;
+	padding: 0;
+}
+.site-description {
+    display: none;
+}
+.main-navigation li {
+	display: block;
+}
+.image-navigation .meta-nav {
+	font-size: 1.2rem;
+}
+blockquote p {
+	@include font-size(1);
+	font-weight: 400;
+	line-height: 1;
+	margin-bottom: 24px;
+}
+.entry-title {
+	@include font-size(1.6);
+}
+.entry-content,
+.entry-summary {
+	margin-top: 0;
+}
+	.comments-area article,
+	.comment-list .trackback,
+	.comment-list .pingback {
+		margin-bottom: 17px;
+		padding-top: 17px;
+}
+	.comments-area,
+	.comment-meta a {
+		font-size: 1rem;
+}
+	.comment-content blockquote p {
+		@include font-size(1.2);
+		line-height: 1.6;
+}
+	.comments-title {
+		margin-bottom: 24px;
+}
+	.site-content .navigation-comment {
+		padding: 0;
+}
+	.comment-list {
+		margin-bottom: 48px;
+}
+	.comment-nav-below {
+		padding-bottom: 48px;
+}
+	.post-parent-title, .post-parent-title a {
+		@include font-size(0.6);
+}
+	.widget-area {
+		overflow: hidden;
+}
+	.widget_search .search-field,
+	.footer-widget-1,
+	.footer-widget-2,
+	.footer-widget-3,
+	.footer-widget-4 {
+		margin: 0 auto;
+		width: 100%;
+	}
+}

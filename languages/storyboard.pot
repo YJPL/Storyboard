@@ -1,0 +1,255 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: storyboard 0.1.2.3\n"
+"POT-Creation-Date: 2017-07-07 19:26+0200\n"
+"PO-Revision-Date: 2016-06-15 14:22+0200\n"
+"Last-Translator: Yves Capelle <yves@film-storyboards.com>\n"
+"Language-Team: Yves Capelle <yves@film-storyboards.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_html;gettext;esc_html_x:1c,2;_x;esc_attr__;__;_e;__ngettext;_n;"
+"__ngettext_noop;_n_noop;_x;_nx;_nx_noop;_ex;esc_attr__;esc_attr_e;esc_attr_x;esc_html__;esc_html_e;esc_html_x;_c;"
+"_nc\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;"
+"_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: archive.php\n"
+"X-Poedit-SearchPath-1: category-portfolio.php\n"
+"X-Poedit-SearchPath-2: codesniffer.ruleset.xml\n"
+"X-Poedit-SearchPath-3: comments.php\n"
+"X-Poedit-SearchPath-4: footer.php\n"
+"X-Poedit-SearchPath-5: functions.php\n"
+"X-Poedit-SearchPath-6: header.php\n"
+"X-Poedit-SearchPath-7: image.php\n"
+"X-Poedit-SearchPath-8: index.php\n"
+"X-Poedit-SearchPath-9: page.php\n"
+"X-Poedit-SearchPath-10: README.md\n"
+"X-Poedit-SearchPath-11: readme.txt\n"
+"X-Poedit-SearchPath-12: rtl.css\n"
+"X-Poedit-SearchPath-13: screenshot.png\n"
+"X-Poedit-SearchPath-14: search.php\n"
+"X-Poedit-SearchPath-15: sidebar.php\n"
+"X-Poedit-SearchPath-16: single.php\n"
+"X-Poedit-SearchPath-17: style.css\n"
+"X-Poedit-SearchPath-18: assets\n"
+"X-Poedit-SearchPath-19: inc\n"
+"X-Poedit-SearchPath-20: inc\n"
+"X-Poedit-SearchPath-21: layouts\n"
+"X-Poedit-SearchPath-22: layouts\n"
+"X-Poedit-SearchPath-23: assets/js\n"
+"X-Poedit-SearchPath-24: home-3.php\n"
+"X-Poedit-SearchPath-25: home-4.php\n"
+
+#: category-portfolio.php:54 category-portfolio.php:74 home-3.php:56 home-3.php:76 home-4.php:56 home-4.php:76
+#, php-format
+msgid "Permanent Link to %s"
+msgstr ""
+
+#: category-portfolio.php:85 home-3.php:89 home-4.php:89 index.php:47
+msgid "Page"
+msgstr ""
+
+#: category-portfolio.php:86 index.php:45
+msgid "Previous page"
+msgstr ""
+
+#: category-portfolio.php:87 index.php:46
+msgid "Next page"
+msgstr ""
+
+#: category-portfolio.php:98
+msgid "Watch all stories by:"
+msgstr ""
+
+#: comments.php:31
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgstr ""
+
+#: comments.php:40 comments.php:61
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:43 comments.php:64
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:44 comments.php:65
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:78
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:57
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: footer.php:57
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:58
+msgid "|"
+msgstr ""
+
+#: footer.php:59
+msgid "http://alternatyves.com"
+msgstr ""
+
+#: footer.php:59
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: functions.php:61 header.php:54
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:142
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:152
+msgid "First Footer Widget"
+msgstr ""
+
+#: functions.php:154
+msgid "The first footer widget"
+msgstr ""
+
+#: functions.php:163
+msgid "Second Footer Widget"
+msgstr ""
+
+#: functions.php:165
+msgid "The second footer widget"
+msgstr ""
+
+#: functions.php:174
+msgid "Third Footer Widget"
+msgstr ""
+
+#: functions.php:176
+msgid "The third footer widget"
+msgstr ""
+
+#: functions.php:185
+msgid "Fourth Footer Widget"
+msgstr ""
+
+#: functions.php:187
+msgid "The fourth footer widget"
+msgstr ""
+
+#: functions.php:236
+msgid "Reed more..."
+msgstr ""
+
+#: functions.php:296 functions.php:307
+msgid "less than a minute"
+msgstr ""
+
+#: functions.php:313
+msgid "almost"
+msgstr ""
+
+#: functions.php:313 functions.php:315
+msgid "minutes"
+msgstr ""
+
+#: functions.php:315
+msgid "about a minute"
+msgstr ""
+
+#: functions.php:315
+msgid "about"
+msgstr ""
+
+#: header.php:55
+msgid "Skip to content"
+msgstr ""
+
+#: image.php:43
+msgid "<span class=\"text-nav\">&larr; Previous image</span>"
+msgstr ""
+
+#: image.php:44
+msgid "<span class=\"text-nav\">Next image &rarr;</span>"
+msgstr ""
+
+#: inc/template-tags.php:34
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: inc/template-tags.php:48 inc/template-tags.php:54
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:50
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:56
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:62
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:62
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:62
+msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags.php:69
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: index.php:45
+msgid "&#8592;"
+msgstr ""
+
+#: index.php:46
+msgid "&#8594;"
+msgstr ""
+
+#: search.php:19
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: single.php:26
+msgid "Previous Post"
+msgstr ""
+
+#: single.php:26
+msgctxt "&larr;"
+msgid "Previous post link"
+msgstr ""
+
+#: single.php:27
+msgid "Next Post"
+msgstr ""
+
+#: single.php:27
+msgctxt "&rarr;"
+msgid "Next post link"
+msgstr ""

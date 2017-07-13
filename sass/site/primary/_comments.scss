@@ -1,0 +1,93 @@
+/* Toggle comments */
+button.toggle-comments {
+    border-width: 3px;
+    background: none;
+    @include font-size(0.9);
+    line-height: $font__line-height-body;
+    padding: 1em;
+    border: #00bbff 2px solid;
+    text-decoration: none;
+    transition: border ease 0.3s; 
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #00bbff;
+    background-color: transparent;
+}
+.toggle-comments {
+	display: block;
+	margin: 24px auto 24px;
+}
+/* Style comments */
+.comment-author .author-cite, 
+.comment-author .author-cite a {
+	color: #a8cac9;
+	font-family: $font__main;
+	@include font-size(1);
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+.comment-author .says {
+	display: none;
+}
+.bypostauthor .comment-content {
+	color: white;
+	background: $color__link; /* Highlighting post author for Theme Check */
+	padding: 4px 8px 1px 8px;
+	border-radius: 2px;
+}	
+.comment-meta,
+.comment-meta a {
+	color: lightgrey;
+	line-height: $font__line-height-body;
+	@include font-size(0.8);
+	margin-bottom: 1em;
+}
+.comment-meta .comment-reply-link {
+  background-color: #faf4f4;
+  padding: 3px;
+  color: #ffaaaa;
+}
+.comment-meta a:hover {
+	color: #000000;
+}
+.ping-meta {
+	color: #a2a2a2;
+	font-size: small;
+	line-height: 2;
+}
+.comment-awaiting-moderation {
+	color: #FFBE69;
+}
+.comments,
+.comment-respond {
+	max-width: 696px;
+}
+.comment-author .avatar {
+	/*border-radius: 50%; /* Circle placeholder */
+	vertical-align: middle;
+}
+.comments-area {
+	max-width: 696px;
+	margin: 0 auto;
+	padding: 0 1.5em;
+}
+.comments-title {
+	font-style: italic;
+	margin-bottom: 48px;
+	text-align: center;
+}
+.form-allowed-tags, 
+.form-allowed-tags code {
+	display: inline-block;   
+}
+.form-submit #submit{ 
+    background: none;
+    display: inline-block;
+    border: $color__link 2px solid;
+    text-decoration: none;
+    transition: border ease 0.3s;
+    color: $color__link;
+}
+.required {
+	color: $color__orange;
+}

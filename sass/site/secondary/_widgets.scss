@@ -1,0 +1,116 @@
+.widget-area .main-sidebar,
+.widget-area .widget-calendar {
+	margin: 0 auto;
+	max-width: 294px;
+	padding-top: 2em;
+	text-align: center;
+}
+.widget-area .calendar_wrap {
+	display: block;
+}
+.footer-widget-1,
+.footer-widget-2,
+.footer-widget-3,
+.footer-widget-4 {
+	float: left;
+	text-align: left;
+	letter-spacing: 0.06em;
+}
+.footer-widget-4 {
+	margin-right: 0;
+}
+.widget-title,
+.widget,
+.widget a {
+	color: $color__text-main;
+	@include font-size(0.9);
+	line-height: $font__line-height-body;
+	font-weight: 400;
+	margin: 4.2em 0 2em 0;
+}
+.widget a:hover {
+	color: white;
+	text-decoration: underline;
+}
+.widget ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.widget ul > li {
+	display: block;
+	list-style: none;
+	padding: .6em 0;
+}
+.widget ul > li:last-child {
+	padding-bottom: 0;
+}
+.widget ul ul > li:first-child {
+	margin-top: .8em;
+}
+.widget ul ul {
+	margin-left: .2em;
+}
+.widget-title,
+.widget-title a {
+	line-height: 1;
+	margin: 0 0 .6em;
+	text-decoration: none;
+	max-width: 100%;
+}
+
+/* Make sure select elements fit in widgets */
+.widget select {
+	max-width: 100%;
+}
+
+/* Search widget */
+.widget_search form {
+	position: relative;
+}
+.widget_search .search-field,
+.search .search-field {
+	@include font-size(0.8);
+	color: $color__link-visited;
+	width: 100%;
+	text-align: center;
+}
+.widget_search .search-submit {
+	display: none;
+}
+
+/* Calendar widget */
+
+.widget_calendar,
+.widget_calendar a {
+	@include font-size(0.8);
+	line-height: 1.6;
+}
+.widget_calendar caption {
+	color: $color__dark-blue;
+	letter-spacing: 0.12em;
+	line-height: 1.6;
+	text-align: left;
+	text-transform: uppercase;
+}
+.widget_calendar thead th,
+.widget_calendar tbody td {
+	border: none;
+	text-align: center;
+}
+.widget_calendar thead th a,
+.widget_calendar tbody td a {
+	background-color: #0ddb85;
+	border-style:double;
+	border-color: $color__link-hover;
+}
+.widget_calendar tbody td a:hover {
+	background-color: $color__link-hover;
+	color: #fff;
+}
+.widget_calendar tfoot a {
+	color: $color__link;
+}
+.widget_calendar tfoot a:hover {
+	color: $color__link-hover;
+}

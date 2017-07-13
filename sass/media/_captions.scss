@@ -1,0 +1,33 @@
+/* Captions settings */
+.wp-caption {
+	margin-bottom: 34px;
+	max-width: 100%;
+}
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	height: auto;
+	margin: 0;
+	max-width: 100%;
+	@include center-block;
+}
+.wp-caption-text {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing:      border-box;
+	font-size: 13px;
+	font-style: italic;
+	line-height: 1.3076923076;
+	margin: 10px 0 7px;
+	padding: 0 10px 0 0; /* Avoid the caption to overflow the width of the image because wp-caption has 10px wider width */
+	text-align: left;
+}
+.wp-caption.alignleft {
+	margin: 7px 24px 0 0;
+	display: none
+}
+.wp-caption.alignright {
+	margin: 7px 0 0 34px;
+}
+.wp-caption.aligncenter {
+	margin-top: 7px;
+}
