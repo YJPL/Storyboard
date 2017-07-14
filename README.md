@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
+[![Build Status](https://travis-ci.org/YJPL/Storyboard.svg?branch=master)](https://travis-ci.org/YJPL/Storyboard)
 
 === Storyboard ===
 
@@ -10,9 +10,9 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: white, light, one-column, flexible-header, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, post-formats, rtl-language-support, sticky-post, theme-options, custom-logo, translation-ready
 
-Storyboard is a WordPress theme originally designed for [Film Storyboards site](http://film-storyboards.com). 
+Storyboard is a WordPress theme originally designed for [Film Storyboards site](http://film-storyboards.com).
 
-== Description == 
+== Description ==
 
 1. a lean portfolio theme to display posts in the ‘portfolio’ category on a three or four column grid.
 
