@@ -1,7 +1,9 @@
 <?php
 /**
  * Template Name: Home 4 columns
- * The template for displaying portfolio as static home page. *Edit — Paginated as "home".
+ * The template for displaying portfolio as static home page.
+ * Paginated as "home".
+ *
  * Show the first image of each post on a four columns grid
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
