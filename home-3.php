@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Home 3 columns
- * The template for displaying portfolio archive pages. *Edit — Use as reference for SilentComics also*
+ * The template for displaying portfolio archive pages in a 3 columns grid.
  * Paginated as "home".
  *
  * @link https://codex.wordpress.org/Template_Hierarchy

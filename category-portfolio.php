@@ -1,8 +1,7 @@
 <?php
 /**
  * Template Name: Category portfolio 3 columns
- * The template for displaying portfolio archive pages. *Edit — Use as reference for SilentComics also*
- * TO DO: Fix pagination
+ * The template for displaying portfolio archive pages.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
