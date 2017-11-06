@@ -15,7 +15,7 @@ Storyboard is a WordPress theme originally designed for [Film Storyboards site](
 
 == Description ==
 
-1. a lean portfolio theme to display posts in the ‘portfolio’ category on a three or four columns grid.
+1. a lean portfolio theme to display posts in the ‘portfolio’ category on a two, three or four columns grid.
 
 2. Doesn’t require custom post type or Jetpack to work out of the box, you just need to mark the posts you want to display in a regular category under the name "portfolio"
 
