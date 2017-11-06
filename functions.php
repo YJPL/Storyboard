@@ -202,7 +202,7 @@ add_action( 'widgets_init', 'storyboard_widgets_init' );
 function storyboard_scripts() {
 	// custom font served from assets/fonts.
 	wp_enqueue_style( 'inconsolata', get_template_directory_uri() . '/assets/fonts/inconsolata.css', array(), null );
-		wp_enqueue_style( 'storyboard-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'storyboard-style', get_stylesheet_uri() );
 
 		// Load the html5 shiv.
 	wp_enqueue_script( 'storyboard-html5', get_template_directory_uri() . '/assets/js/min/html5.min.js', array(), '3.7.3' );

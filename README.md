@@ -1,6 +1,5 @@
 [![Build Status](https://travis-ci.org/YJPL/Storyboard.svg?branch=master)](https://travis-ci.org/YJPL/Storyboard)
-[![Code Climate](https://codeclimate.com/github/YJPL/Storyboard/badges/gpa.svg)](https://codeclimate.com/github/YJPL/Storyboard)
-
+-[![Code Climate](https://codeclimate.com/github/YJPL/Storyboard/badges/gpa.svg)](https://codeclimate.com/github/YJPL/Storyboard)
 
 === Storyboard ===
 

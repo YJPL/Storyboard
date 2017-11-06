@@ -168,10 +168,10 @@
 .site-title,
 .custom-logo,
 .logo {
-	float: none;
 	display: block;
-	position: relative;
+	float: none;
 	margin: 0 auto;
+	position: relative;
 	text-align: center;
 }
 .site-title {
@@ -180,8 +180,8 @@
 	}
 .custom-logo,
 .logo {
-	max-width: 144px;
 	height: auto;
+	max-width: 144px;
 	padding: 0;
 }
 .site-description {

@@ -22,11 +22,14 @@
 .widget-title,
 .widget,
 .widget a {
-	color: $color__text-main;
+	color: $color__dark-blue;
 	@include font-size(0.9);
 	line-height: $font__line-height-body;
 	font-weight: 400;
 	margin: 4.2em 0 2em 0;
+}
+.main-sidebar .widget a:hover {
+	color: $color__link;
 }
 .widget a:hover {
 	color: white;

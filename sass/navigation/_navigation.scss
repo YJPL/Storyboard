@@ -42,9 +42,9 @@
 .site-content [class*="navigation"] {
 	overflow: hidden;
 
-    }   
+    }
 
-.nav-previous-page, 
+.nav-previous-page,
 .image-navigation .nav-previous,
 .image-navigation .previous,
 .comment-navigation .nav-previous,
@@ -72,13 +72,13 @@ next .meta-nav a:hover {
 .image-navigation .text-nav {
 	display: block;
 	text-align: center
-} 
+}
 .image-navigation .meta-nav {
 	@include font-size(2.4);
-	color: $color__text-main;
 	background-color: transparent;
-	text-align: center;
+	color: $color__text-main;
 	padding: 4px;
+	text-align: center;
 }
 
 /* pagination */
@@ -88,23 +88,23 @@ next .meta-nav a:hover {
 .nav-previous-page a,
 .nav-next-page a {
 	@include font-size(0.8);
+	background-color: white;
+	color: #004a66;
 	line-height: $font__line-height-body;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: #004a66;
-    padding: 10px 12px;
-    background-color: white;
+  letter-spacing: 0.1em;
+  padding: 10px 12px;
+	text-transform: uppercase;
 	}
 .page-numbers a:hover,
 .nav-previous a:hover,
 .nav-next a:hover,
 .nav-previous-page a:hover,
 .nav-next-page a:hover {
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+		background-color: $color__link;
     color: white;
-    padding: 10px 12px;
-    background-color: $color__link;
+		letter-spacing: 0.1em;
+		padding: 10px 12px;
+		text-transform: uppercase;
 	}
 .page-numbers,
 .prev page-numbers,
@@ -116,11 +116,10 @@ next .meta-nav a:hover {
 .post-parent-title, .post-parent-title a {
 	/*font-family: Futura, "Trebuchet MS", Arial, sans-serif;*/
 	color: black;
-	
 	font-size: 0.9rem;
 	line-height: 1.2;
+	margin-top: 12px;
 	letter-spacing: 0.12em;
 	text-transform: uppercase;
 	text-align: center;
-	margin-top: 12px;
 }

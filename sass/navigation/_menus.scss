@@ -19,29 +19,29 @@
 /* author's custom style (svg logo)
 ----------------------------------------------- */
 .logo, a.logo {
-	width: 192px;
-	height: auto;
 	display: block;
-	padding: 0.4em 0 0 6px; /* indent logo */
 	float: left;
+	height: auto;
+	padding: 0.4em 0 0 6px; /* indent logo */
+	width: 192px;
 }
 
 .no-svg .logo { //needs update with specific film storyboards logo
-	width: 96px;
-	height: 48px;
 	background-image: url('../images/storyboard-logo.png');
 	background-repeat: no-repeat;
+	height: 48px;
+	width: 96px;
 }
 
 /* =Masthead
 ----------------------------------------------- */
 .site-branding {
-	position: relative;
-	width: 100%;
 	height: 96px;
 	/* height: 196px; /*header image height */
-	opacity: 24%;
 	max-width: 1272px;
+	opacity: 24%;
+	position: relative;
+	width: 100%;
 }
 
 .site-title {
