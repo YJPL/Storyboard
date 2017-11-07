@@ -7,8 +7,8 @@
 Contributors: Yves Capelle, alternatyves outc.
 Requires at least: WordPress 4.4
 Version; 1.0.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: MIT
+License URI: https://opensource.org/licenses/MIT
 Tags: white, light, one-column, flexible-header, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, post-formats, rtl-language-support, sticky-post, theme-options, custom-logo, translation-ready
 
 Storyboard is a WordPress theme originally designed for [Film Storyboards site](http://film-storyboards.com).
