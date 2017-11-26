@@ -11,7 +11,7 @@ License: MIT
 License URI: https://opensource.org/licenses/MIT
 Tags: white, light, one-column, flexible-header, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, post-formats, rtl-language-support, sticky-post, theme-options, custom-logo, translation-ready
 
-Storyboard is a WordPress theme originally designed for [Film Storyboards site](http://film-storyboards.com).
+Storyboard is a WordPress theme originally designed for the [Film Storyboards site](https://film-storyboards.com "Film Storyboards portfolio site").
 
 == Description ==
 
