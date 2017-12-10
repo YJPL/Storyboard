@@ -53,7 +53,7 @@ if ( ! function_exists( 'storyboard_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 		set_post_thumbnail_size();
-		add_image_size( 'post-thumb', 600, 371, true ); // cropped.
+		add_image_size( 'post-thumb', 624, 386, true ); // cropped.
 		add_image_size( 'featured', 1272, 312, true ); // cropped.
 
 		// This theme uses wp_nav_menu() in one location.
@@ -281,7 +281,7 @@ function get_first_image() {
 	// Converts the $first_img link to the link of that image's thumbnail.
 	 $explode = explode( '.',$first_img );
 	 $count = count( $explode );
-	 $size = '-600x371'; // Golden Ratio rectangle.
+	 $size = '-624x386'; // Golden Ratio rectangle.
 	 $explode[ $count -2 ] = $explode[ $count -2 ] . '' . $size;
 	 $thumb_img = implode( '.',$explode );
 	 return $thumb_img;

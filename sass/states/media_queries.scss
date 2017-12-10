@@ -122,13 +122,11 @@
 @media screen and (max-width: 1272px) {
 	.site-description {
 		@include font-size(0.8);
-	/*@include font-size(1);
-	position: relative;*/
 	}
 	.site-title {
-		max-width: 264px;
+		max-width: 288px;
 		@include font-size(1.2);
-		margin: 0.3em 0  0 6px;
+		margin: 0.3em 0 0 6px;
 	}
 	.site-description {
 		margin: 0 0 0 6px;
@@ -140,8 +138,6 @@
 @media screen and (max-width: 988px) {
 	.site-description {
 		display: none;
-	/*@include font-size(1);
-	position: relative;*/
 	}
 }
 

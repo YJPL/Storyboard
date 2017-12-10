@@ -2,7 +2,7 @@
 .two-columns { width: 100%; margin: 1.2em 0; }
 .two-columns:before, .two-columns:after { content: " "; display: table; }
 .two-columns:after { clear: both; }
-.two-column { float: left; margin: 0 3% 1em 0; width: 48.5%; }
+.two-column { float: left; margin: 0 2% 1em 0; width: 49%; }
 .two-column:nth-child(2n) { margin-right: 0; }
 .two-column:nth-child(2n+1) { margin-left: 0; clear: left; }
 .two-column img { width: 100%; }

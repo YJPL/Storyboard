@@ -33,7 +33,7 @@
 <header id="masthead" class="site-header" role="banner">
 	<div class="wrap">
 		<div class="site-branding">
-			<?php // get_template_part( '/assets/inline', 'logo.svg' ); // use and replace by your own custom svg logo. ?>
+			<?php // get_template_part( '/assets/inline', 'logo.svg' ); // uncomment to replace with your own custom svg logo, see sample. ?>
 			<?php storyboard_the_custom_logo(); ?>
 
 			<?php if ( is_front_page() && is_home() ) : ?>
@@ -51,7 +51,7 @@ if ( $description || is_customize_preview() ) : ?>
 
 			<?php if ( has_nav_menu( 'primary' ) ) : ?>
 		<nav id="site-navigation" class="main-navigation clear" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'storyboard' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Navigation', 'storyboard' ); ?></button>
 			<div><a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'storyboard' ); ?></a></div>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>

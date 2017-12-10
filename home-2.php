@@ -42,7 +42,7 @@
 			$loop = new WP_Query( array(
 					'post_type'       => 'post',
 					'category_name'   => 'portfolio', // call a specific category (slug), uncomment if you want to show all posts.
-					'posts_per_page' 	=> 9, // changes default Blog pages number "reading settings" set in dashboard.
+					'posts_per_page' 	=> 8, // changes default Blog pages number "reading settings" set in dashboard.
 					'paged'           => $paged,
 					'orderby' 			  => 'date',
 					'order'				    => 'DESC',

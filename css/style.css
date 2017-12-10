@@ -4,7 +4,7 @@ Theme URI: http://film-storyboards.com/
 Author: Yves Capelle
 Author URI: http://alternatyves.com
 Description: A lean WordPress theme for storyboards
-Version: 1.2.5
+Version: 1.2.4
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: storyboard
@@ -646,7 +646,7 @@ a {
   /*text-align: justify; /* make sure it works with other fonts */
   text-transform: uppercase;
   word-wrap: break-word;
-  max-width: 384px;
+  max-width: 312px;
   margin: 0; }
 
 .site-title a {
@@ -692,7 +692,7 @@ a {
   text-align: justify;
   text-transform: uppercase;
   width: 100%;
-  max-width: 648px;
+  max-width: 552px;
   margin: 0; }
 
 .main-navigation ul {
@@ -1137,8 +1137,8 @@ body {
 
 .two-column {
   float: left;
-  margin: 0 2% 1em 0;
-  width: 49%; }
+  margin: 0 3% 1em 0;
+  width: 48.5%; }
 
 .two-column:nth-child(2n) {
   margin-right: 0; }
@@ -1995,12 +1995,14 @@ span > object {
 @media screen and (max-width: 1272px) {
   .site-description {
     font-size: 12.8px;
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+    /*@include font-size(1);
+	position: relative;*/ }
   .site-title {
-    max-width: 288px;
+    max-width: 264px;
     font-size: 19.2px;
     font-size: 1.2rem;
-    margin: 0.3em 0 0 6px; }
+    margin: 0.3em 0  0 6px; }
   .site-description {
     margin: 0 0 0 6px; }
   .site-branding .main-navigation {
@@ -2009,7 +2011,9 @@ span > object {
 
 @media screen and (max-width: 988px) {
   .site-description {
-    display: none; } }
+    display: none;
+    /*@include font-size(1);
+	position: relative;*/ } }
 
 @media screen and (max-width: 600px) {
   body, pre, code, kbd, tt, var {

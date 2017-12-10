@@ -3,9 +3,9 @@
 Contributors: Yves Capelle
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
 
-Requires at least: 4.0
+Requires at least: 4.4
 
-Tested up to: 4.8.2
+Tested up to: 4.9.1
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -26,22 +26,23 @@ This is @film-storyboards portfolio theme. Instead try turning me into the next,
 
 = Does this theme support any plugins? =
 
-Storyboard includes support for Infinite Scroll in Jetpack.
+Storyboard includes support for WooCommerce, Infinite Scroll in Jetpack.
 
 == Changelog ==
 
-= (06/11/2017) - Version 1.2.4 =
+= 1.2.5 — December 27 2017 =
+Fix menu float
+
+= 1.2.4 06/11/2017 =
 Minor CSS fixes
 Added a two columns grid option for home
 
-improve code
-
-= (00/07/2017) - Version 1.2.2 =
+= 1.2.2 — 00/07/2017 =
 more css fixes
 code cleanup
 pagination fixes
 
-= (04/07/2017) - Version 1.2.1 =
+= 1.2.1 — 04/07/2017 =
 [>] Fix some little inconsistencies in styling and code
 Change translation
 
@@ -53,7 +54,8 @@ Change translation
 * Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv3 or later](https://www.gnu.org/licenses/gpl-3.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
 
-Courrier Prime Sans & Courrier Prime Code
-[http://quoteunquoteapps.com/courierprime/#code-sans](http://quoteunquoteapps.com/courierprime/#code-sans)
+Inconsolata, Copyright Raphael Levien
+Licence: Open Font License of SIL
+Source: http://www.levien.com/type/myfonts/inconsolata.html
 
-**Courier Prime** was designed by Alan Dague-Greene for John August and Quote-Unquote Apps.It’s released under the [SIL Open Font License (OFL)](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL) license.
+***
