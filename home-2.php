@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Home 2 columns
- * The template for displaying portfolio archive pages in a 3 columns grid.
+ * The template for displaying portfolio archive pages in a 2 columns grid.
  * Paginated as "home".
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
