@@ -1,8 +1,7 @@
 <?php
 /**
  * Template Name: Home 2 columns
- * The template for displaying portfolio archive pages in a 2 columns grid.
- * Paginated as "home".
+ * The template for displaying posts in the "portfolio" category on the home page in a 2 columns grid.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -36,7 +35,7 @@
 
 	<div class="two-columns">
 		<?php
-			// get the correct paged figure on a static page.
+			// get the correct paged figure on a static page. Paginated as "home".
 			$paged = ( get_query_var( 'page' ) ) ? get_query_var( 'page' ) : 1;
 
 			$loop = new WP_Query( array(

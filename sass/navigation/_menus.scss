@@ -94,12 +94,11 @@
 .site-branding .main-navigation {
   display: block;
   float: right;
-  right: 0;
   padding: 0.24em 0;
   @include font-size(1.1);
   line-height: $font__line-height-body;
   letter-spacing: 0.12em;
-  text-align: justify;
+  text-align: right;
   text-transform: uppercase;
   width: 100%;
   max-width: 648px;
@@ -136,7 +135,7 @@
 .main-navigation .current_page_item > a:hover,
 .main-navigation .current-menu-item > a:hover {
 	color: #fff;
-	background-color: $color__link;
+	background-color: $color__background-screen;
 }
 .main-navigation a:active {
 	background: #4400ff;
