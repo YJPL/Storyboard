@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Category portfolio 3 columns
- * The template for displaying portfolio archive pages.
+ * The template for displaying the portfolio category archive pages.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -55,7 +55,7 @@
 
 											echo '<a href="';
 											the_permalink();
-											echo '" class="thumbnail-wrapper">';
+											echo '" class="thumbnail">';
 											the_post_thumbnail( 'post-thumb' );
 
 											echo '</a>';

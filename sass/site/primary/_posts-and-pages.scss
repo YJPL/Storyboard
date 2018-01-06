@@ -36,18 +36,20 @@
 	padding-top: 0.675rem;
 	padding-bottom: 1.5rem;
 	line-height: 1;
+	letter-spacing: 0.06em;
 	margin: 0 auto;
 	max-width: 696px;
 	-ms-word-wrap: break-word; /* support non-breaking text for edge cases  */
 	word-wrap: break-word;
 	color:#422442;
-	text-transform:uppercase;
-	text-align: center;
+  text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
 }
 .archive-title {
 	padding-bottom: 1em;
 }
-.entry-title a:hover{
+.entry-title a:hover {
 	text-decoration: none;
 	color: $color__link;
 }
@@ -64,11 +66,23 @@
 	max-width: 696px;
 	@include font-size(0.8);
 	color: lightgrey;
-    letter-spacing: 0.1em;
+  letter-spacing: 0.1em;
 	line-height: 1.4;
-	padding: 8px 0 9px 0; /* previously 8px 0 9px 0 */
+	padding: 8px 0 9px 0;
 	text-transform: uppercase;
 }
+
+.categories-links a,
+.cat-links a,
+.entry-footer a,
+.tags-links a,
+.comments-link a,
+.entry-meta .reading-time a,
+.entry-meta a {
+	color: $color__link-visited;
+	text-decoration: none;
+}
+
 .post-edit-link {
 	padding: 9px 6px 6px 6px;
 	color: $color__link-hover;
@@ -80,21 +94,21 @@
 	padding-top: 0;
 	text-align: center;
 }
-.entry-footer,
+.site-footer .site-info a,
 .entry-meta span + span:before {
 	content: "\0020\007C\0020";
-	color: $color__link-visited;
+	color: $color__dark-blue;
+	text-decoration: none;
 }
 .entry-footer:hover {
   opacity: 1;
 }
-.categories-links a,
-.entry-footer a {
-	text-decoration:none;
+.categories-links a {
+	text-decoration: none;
 	color: $color__link-visited;
 }
 .sep {
-	color: $color__link;
+	color: $color__dark-blue;
 }
 .byline,
 .updated:not(.published){
@@ -141,7 +155,7 @@
 }
 .format-image .entry-attachment {
 	margin: 0 auto;
-	max-width: auto; /* don't limit image size to theme's 1272 */
+	max-width: 100%; /* don't limit image size to theme's 1272 */
 }
 
 /* Quote */
@@ -213,8 +227,8 @@
 
 article.attachment .entry-content,
 article.attachment .attachment {
-	margin-top: 2.4em;
-	max-width: 1920px;
+	margin-top: 1em;
+	max-width: 100%;
 	text-align: center;
 }
 article.attachment .entry-caption {
@@ -250,8 +264,10 @@ article.error404 .widget {
 	-moz-box-sizing: border-box;
 	box-sizing:      border-box;
 }
+.widget a,
 article.error404 .widget a {
 	border-bottom: 0;
+	text-decoration: none;
 }
 article.error404 .widget-title,
 article.error404 .widgettitle {
@@ -269,9 +285,11 @@ article.error404 .widget ul a  {
 	font-weight: 300;
 	list-style: none;
 	margin: 0;
+	text-decoration: none;
 }
 article.error404 .widget ul a:hover  {
 color: $color__link-visited;
+text-decoration: none;
 }
 article.error404 .widget li {
 	border-top: 1px solid #005676;
@@ -284,6 +302,7 @@ article.error404 .widget_calendar,
 article.error404 .widget_calendar a {
 	@include font-size(1);
 	line-height: 2;
+	text-decoration: none;
 }
 article.error404 .widget_archive p,
 article.error404 .widget_calendar  {

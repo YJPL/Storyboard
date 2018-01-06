@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Home 2 columns
- * The template for displaying posts in the "portfolio" category on the home page in a 2 columns grid.
+ * This template displays image thumbnails from posts in the "portfolio" category on the home page in a 2 columns grid.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -57,7 +57,7 @@
 
 								echo '<a href="';
 								the_permalink();
-								echo '" class="thumbnail-wrapper">';
+								echo '" class="thumbnail">';
 								the_post_thumbnail( 'post-thumb' );
 
 								echo '</a>';

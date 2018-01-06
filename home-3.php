@@ -1,8 +1,7 @@
 <?php
 /**
  * Template Name: Home 3 columns
- * The template for displaying portfolio archive pages in a 3 columns grid.
- * Paginated as "home".
+ * This template displays image thumbnails from posts in the "portfolio" category on the home page in a 3 columns grid.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -58,7 +57,7 @@
 
 								echo '<a href="';
 								the_permalink();
-								echo '" class="thumbnail-wrapper">';
+								echo '" class="thumbnail">';
 								the_post_thumbnail( 'post-thumb' );
 
 								echo '</a>';

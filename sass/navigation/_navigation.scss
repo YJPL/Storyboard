@@ -41,7 +41,6 @@
 }
 .site-content [class*="navigation"] {
 	overflow: hidden;
-
     }
 
 .nav-previous-page,
@@ -64,21 +63,21 @@
 }
 
 /* Image navigation */
-next .meta-nav a:hover {
-	display: none;
-	color: $color__link;
+.image-navigation  {
+	margin-top: 12px;
+	display: block;
 }
 
-.image-navigation .text-nav {
-	display: block;
-	text-align: center
-}
-.image-navigation .meta-nav {
-	@include font-size(2.4);
-	background-color: transparent;
+.image-navigation a {
+	@include font-size(0.9);
+	padding: 0 0 0 6px;
 	color: $color__text-main;
-	padding: 4px;
-	text-align: center;
+	text-decoration: none;
+}
+
+.image-navigation a:hover,
+.meta-nav a:hover {
+	color: $color__link;
 }
 
 /* pagination */
@@ -93,6 +92,7 @@ next .meta-nav a:hover {
 	line-height: $font__line-height-body;
   letter-spacing: 0.1em;
   padding: 10px 12px;
+	text-decoration: none;
 	text-transform: uppercase;
 	}
 .page-numbers a:hover,
@@ -100,7 +100,7 @@ next .meta-nav a:hover {
 .nav-next a:hover,
 .nav-previous-page a:hover,
 .nav-next-page a:hover {
-		background-color: $color__link;
+		background-color: black; /* instead of $color__link */
     color: white;
 		letter-spacing: 0.1em;
 		padding: 10px 12px;
@@ -114,12 +114,62 @@ next .meta-nav a:hover {
 
 .story-title, .story-title a, .story-title li,
 .post-parent-title, .post-parent-title a {
-	/*font-family: Futura, "Trebuchet MS", Arial, sans-serif;*/
 	color: black;
+	display: block;
 	font-size: 0.9rem;
 	line-height: 1.2;
-	margin-top: 12px;
+	margin: 0 auto;
+	padding-top: 0.4em;
 	letter-spacing: 0.12em;
-	text-transform: uppercase;
+	margin: 0 auto;
 	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.story-title a:hover, .post-parent-title a:hover {
+	color: $color__link;
+}
+
+/* Can combine this with overflow-hidden to make background images grow on hover
+ * even if you are using background-size: cover */
+
+.grow {
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
+
+.grow:hover,
+.grow:focus {
+  transform: scale(1.05);
+}
+
+.grow:active {
+  transform: scale(.90);
+}
+
+.grow-large {
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform .25s ease-in-out;
+}
+
+.grow-large:hover,
+.grow-large:focus {
+  transform: scale(1.2);
+}
+
+.grow-large:active {
+  transform: scale(.95);
+}
+
+.story-thumb img:hover,
+.thumbnail img:hover {
+	cursor: pointer;
+	opacity:0.6;
+	position: relative;
+	transform: scale(1.05);
 }

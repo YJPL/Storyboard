@@ -1,10 +1,10 @@
 /*!
 Theme Name: Storyboard
-Theme URI: http://film-storyboards.com/
+Theme URI: https://film-storyboards.com/
 Author: Yves Capelle
 Author URI: http://alternatyves.com
 Description: A lean WordPress theme for storyboards
-Version: 1.2.5
+Version: 1.2.8
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: storyboard
@@ -88,7 +88,7 @@ a {
 
 a:active,
 a:hover {
-  outline: 0; }
+  outline: focus; }
 
 abbr[title] {
   border-bottom: 1px dotted; }
@@ -253,7 +253,7 @@ address {
 
 pre {
   background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-family: Inconsolata, monospace;
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 1.6;
@@ -580,12 +580,12 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #00bbff;
-  text-decoration: none; }
+  color: #001219;
+  text-decoration: underline; }
   a:visited {
     color: #76ddff; }
   a:hover, a:focus, a:active {
-    color: #00ffc4; }
+    color: #00bbff; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -611,7 +611,7 @@ a {
   display: block;
   float: left;
   height: auto;
-  padding: 0.4em 0 0 6px;
+  padding: 4em 0 0 6px;
   /* indent logo */
   width: 192px; }
 
@@ -627,7 +627,7 @@ a {
   height: 96px;
   /* height: 196px; /*header image height */
   max-width: 1272px;
-  opacity: 24%;
+  opacity: 15;
   position: relative;
   width: 100%; }
 
@@ -643,14 +643,16 @@ a {
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.14em;
-  /*text-align: justify; /* make sure it works with other fonts */
+  text-align: justify;
+  /* make sure it works with other fonts */
   text-transform: uppercase;
   word-wrap: break-word;
   max-width: 384px;
   margin: 0; }
 
 .site-title a {
-  color: #001219; }
+  color: #001219;
+  text-decoration: none; }
 
 .site-title a:hover,
 .site-title a:focus {
@@ -715,7 +717,8 @@ a {
   padding: 9px 6px 6px 9px; }
 
 .main-navigation a:hover {
-  background: #00bbff; }
+  color: white;
+  background: black; }
 
 .main-navigation .current_page_item > a,
 .main-navigation .current-menu-item > a {
@@ -723,8 +726,8 @@ a {
 
 .main-navigation .current_page_item > a:hover,
 .main-navigation .current-menu-item > a:hover {
-  color: #fff;
-  background-color: #f1f1f1; }
+  color: white;
+  background-color: #00bbff; }
 
 .main-navigation a:active {
   background: #4400ff;
@@ -841,21 +844,20 @@ button.menu-toggle:hover {
   text-align: right; }
 
 /* Image navigation */
-next .meta-nav a:hover {
-  display: none;
-  color: #00bbff; }
+.image-navigation {
+  margin-top: 12px;
+  display: block; }
 
-.image-navigation .text-nav {
-  display: block;
-  text-align: center; }
-
-.image-navigation .meta-nav {
-  font-size: 38.4px;
-  font-size: 2.4rem;
-  background-color: transparent;
+.image-navigation a {
+  font-size: 14.4px;
+  font-size: 0.9rem;
+  padding: 0 0 0 6px;
   color: #001219;
-  padding: 4px;
-  text-align: center; }
+  text-decoration: none; }
+
+.image-navigation a:hover,
+.meta-nav a:hover {
+  color: #00bbff; }
 
 /* pagination */
 .page-numbers,
@@ -870,6 +872,7 @@ next .meta-nav a:hover {
   line-height: 1.44;
   letter-spacing: 0.1em;
   padding: 10px 12px;
+  text-decoration: none;
   text-transform: uppercase; }
 
 .page-numbers a:hover,
@@ -877,7 +880,8 @@ next .meta-nav a:hover {
 .nav-next a:hover,
 .nav-previous-page a:hover,
 .nav-next-page a:hover {
-  background-color: #00bbff;
+  background-color: black;
+  /* instead of $color__link */
   color: white;
   letter-spacing: 0.1em;
   padding: 10px 12px;
@@ -890,14 +894,55 @@ next .meta-nav a:hover {
 
 .story-title, .story-title a, .story-title li,
 .post-parent-title, .post-parent-title a {
-  /*font-family: Futura, "Trebuchet MS", Arial, sans-serif;*/
   color: black;
+  display: block;
   font-size: 0.9rem;
   line-height: 1.2;
-  margin-top: 12px;
+  margin: 0 auto;
+  padding-top: 0.4em;
   letter-spacing: 0.12em;
-  text-transform: uppercase;
-  text-align: center; }
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.story-title a:hover, .post-parent-title a:hover {
+  color: #00bbff; }
+
+/* Can combine this with overflow-hidden to make background images grow on hover
+ * even if you are using background-size: cover */
+.grow {
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out; }
+
+.grow:hover,
+.grow:focus {
+  transform: scale(1.05); }
+
+.grow:active {
+  transform: scale(0.9); }
+
+.grow-large {
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform .25s ease-in-out; }
+
+.grow-large:hover,
+.grow-large:focus {
+  transform: scale(1.2); }
+
+.grow-large:active {
+  transform: scale(0.95); }
+
+.story-thumb img:hover,
+.thumbnail img:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  position: relative;
+  transform: scale(1.05); }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1313,14 +1358,16 @@ body {
   padding-top: 0.675rem;
   padding-bottom: 1.5rem;
   line-height: 1;
+  letter-spacing: 0.06em;
   margin: 0 auto;
   max-width: 696px;
   -ms-word-wrap: break-word;
   /* support non-breaking text for edge cases  */
   word-wrap: break-word;
   color: #422442;
+  text-align: center;
   text-transform: uppercase;
-  text-align: center; }
+  text-decoration: none; }
 
 .archive-title {
   padding-bottom: 1em; }
@@ -1345,8 +1392,17 @@ body {
   letter-spacing: 0.1em;
   line-height: 1.4;
   padding: 8px 0 9px 0;
-  /* previously 8px 0 9px 0 */
   text-transform: uppercase; }
+
+.categories-links a,
+.cat-links a,
+.entry-footer a,
+.tags-links a,
+.comments-link a,
+.entry-meta .reading-time a,
+.entry-meta a {
+  color: #76ddff;
+  text-decoration: none; }
 
 .post-edit-link {
   padding: 9px 6px 6px 6px;
@@ -1358,21 +1414,21 @@ body {
   padding-top: 0;
   text-align: center; }
 
-.entry-footer,
+.site-footer .site-info a,
 .entry-meta span + span:before {
   content: "\0020\007C\0020";
-  color: #76ddff; }
+  color: #005676;
+  text-decoration: none; }
 
 .entry-footer:hover {
   opacity: 1; }
 
-.categories-links a,
-.entry-footer a {
+.categories-links a {
   text-decoration: none;
   color: #76ddff; }
 
 .sep {
-  color: #00bbff; }
+  color: #005676; }
 
 .byline,
 .updated:not(.published) {
@@ -1416,7 +1472,7 @@ body {
 
 .format-image .entry-attachment {
   margin: 0 auto;
-  max-width: auto;
+  max-width: 100%;
   /* don't limit image size to theme's 1272 */ }
 
 /* Quote */
@@ -1487,8 +1543,8 @@ body {
 /* =Attachment page */
 article.attachment .entry-content,
 article.attachment .attachment {
-  margin-top: 2.4em;
-  max-width: 1920px;
+  margin-top: 1em;
+  max-width: 100%;
   text-align: center; }
 
 article.attachment .entry-caption {
@@ -1523,8 +1579,10 @@ article.error404 .widget {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+.widget a,
 article.error404 .widget a {
-  border-bottom: 0; }
+  border-bottom: 0;
+  text-decoration: none; }
 
 article.error404 .widget-title,
 article.error404 .widgettitle {
@@ -1543,10 +1601,12 @@ article.error404 .widget ul a {
   line-height: 2;
   font-weight: 300;
   list-style: none;
-  margin: 0; }
+  margin: 0;
+  text-decoration: none; }
 
 article.error404 .widget ul a:hover {
-  color: #76ddff; }
+  color: #76ddff;
+  text-decoration: none; }
 
 article.error404 .widget li {
   border-top: 1px solid #005676; }
@@ -1559,7 +1619,8 @@ article.error404 .widget_calendar,
 article.error404 .widget_calendar a {
   font-size: 16px;
   font-size: 1rem;
-  line-height: 2; }
+  line-height: 2;
+  text-decoration: none; }
 
 article.error404 .widget_archive p,
 article.error404 .widget_calendar {
@@ -1768,10 +1829,7 @@ span > object {
   display: block;
   height: auto;
   margin: 0;
-  max-width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
+  max-width: 100%; }
 
 .wp-caption-text {
   -moz-box-sizing: border-box;

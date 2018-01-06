@@ -22,7 +22,7 @@
 	display: block;
 	float: left;
 	height: auto;
-	padding: 0.4em 0 0 6px; /* indent logo */
+	padding: 4em 0 0 6px; /* indent logo */
 	width: 192px;
 }
 
@@ -39,7 +39,7 @@
 	height: 96px;
 	/* height: 196px; /*header image height */
 	max-width: 1272px;
-	opacity: 24%;
+	opacity: 15;
 	position: relative;
 	width: 100%;
 }
@@ -53,7 +53,7 @@
 	font-weight: 500;
 	line-height: 1;
 	letter-spacing: 0.14em;
-	/*text-align: justify; /* make sure it works with other fonts */
+	text-align: justify; /* make sure it works with other fonts */
 	text-transform: uppercase;
 	word-wrap: break-word;
 	max-width: 384px;
@@ -62,6 +62,7 @@
 
 .site-title a {
 	color: $color__text-main;
+	text-decoration: none;
 }
 .site-title a:hover,
 .site-title a:focus {
@@ -126,7 +127,8 @@
 	padding: 9px 6px 6px 9px;
 }
 .main-navigation a:hover {
-	background: $color__link;
+	color: white;
+	background: black;
 }
 .main-navigation .current_page_item > a,
 .main-navigation .current-menu-item > a {
@@ -134,8 +136,8 @@
 }
 .main-navigation .current_page_item > a:hover,
 .main-navigation .current-menu-item > a:hover {
-	color: #fff;
-	background-color: $color__background-screen;
+	color: white;
+	background-color: $color__link;
 }
 .main-navigation a:active {
 	background: #4400ff;

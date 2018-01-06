@@ -1,10 +1,7 @@
 <?php
 /**
  * Template Name: Home 4 columns
- * The template for displaying portfolio as static home page.
- * Paginated as "home".
- *
- * Show the first image of each post on a four columns grid
+ * This template displays image thumbnails from posts in the "portfolio" category on the home page in a 4 columns grid.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -60,7 +57,7 @@ endif;
 
 								echo '<a href="';
 								the_permalink();
-								echo '" class="thumbnail-wrapper">';
+								echo '" class="thumbnail">';
 								the_post_thumbnail( 'post-thumb' );
 
 								echo '</a>';

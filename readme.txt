@@ -1,20 +1,22 @@
 === Storyboard ===
 
 Contributors: Yves Capelle
-Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
-
+Tags: portfolio, one-column, flexible-header, grid-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, post-formats, rtl-language-support, sticky-post, theme-options, custom-logo, translation-ready, blog
 Requires at least: 4.4
 
 Tested up to: 4.9.1
 Stable tag: 1.0.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-A theme for storyboards and image-based portfolio
 
 == Description ==
 
-This is @film-storyboards portfolio theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Storyboard is a lean image-based portfolio theme for WordPress.
+This theme draws an inspiration from screenplay form.
+It tends toward a classic look, with an emphasis on clarity.
+Its galleries can work well for illustrators and photographers who focus on images.
+But also for programmers who like to write a simple blog in monotype font.
 
 == Installation ==
 
@@ -29,6 +31,13 @@ This is @film-storyboards portfolio theme. Instead try turning me into the next,
 Storyboard includes support for WooCommerce, Infinite Scroll in Jetpack.
 
 == Changelog ==
+
+= 1.2.8 — January 6 2017 =
+change image navigation styling
+
+= 1.2.6 — January 4 2017 =
+menu styling changes
+animation, navigation & colours
 
 = 1.2.5 — December 27 2017 =
 Fix menu float
