@@ -23,6 +23,7 @@
 }
 	?>" />
 <link rel="profile" href="http://gmpg.org/xfn/11">
+<meta name="referrer" content="no-referrer">
 
 <?php wp_head(); ?>
 </head>
