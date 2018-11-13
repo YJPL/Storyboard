@@ -12,7 +12,7 @@ License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: white, light, one-column, flexible-header, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, post-formats, rtl-language-support, sticky-post, theme-options, custom-logo, translation-ready
 
-Storyboard is a WordPress theme originally designed for the [Film Storyboards site](https://film-storyboards.com "Film Storyboards portfolio site").
+Storyboard is a WordPress theme originally designed for the [Film Storyboards portfolio site](https://film-storyboards.com "Film Storyboards portfolio site").
 
 == Description ==
 
