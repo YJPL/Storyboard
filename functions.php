@@ -149,8 +149,8 @@ function storyboard_widgets_init() {
 	) );
 	// First footer widget area, located in the footer. Empty by default.
 	register_sidebar( array(
-		'name' 		     	=> __( 'First Footer Widget', 'storyboard' ),
-		'id' 			      => 'first-footer-widget',
+		'name' 		    => __( 'First Footer Widget', 'storyboard' ),
+		'id' 			=> 'first-footer-widget',
 		'description'   => __( 'The first footer widget', 'storyboard' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -160,8 +160,8 @@ function storyboard_widgets_init() {
 
 	// Second Footer Widget Area, located in the footer. Empty by default.
 	register_sidebar( array(
-		'name' 		    	=> __( 'Second Footer Widget', 'storyboard' ),
-		'id' 			      => 'second-footer-widget',
+		'name' 		    => __( 'Second Footer Widget', 'storyboard' ),
+		'id' 			=> 'second-footer-widget',
 		'description'   => __( 'The second footer widget', 'storyboard' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -171,8 +171,8 @@ function storyboard_widgets_init() {
 
 	// Third Footer Widget Area, located in the footer. Empty by default.
 	register_sidebar( array(
-		'name' 		    	=> __( 'Third Footer Widget', 'storyboard' ),
-		'id' 			      => 'third-footer-widget',
+		'name' 		    => __( 'Third Footer Widget', 'storyboard' ),
+		'id' 			=> 'third-footer-widget',
 		'description' 	=> __( 'The third footer widget', 'storyboard' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -182,8 +182,8 @@ function storyboard_widgets_init() {
 
 	// Fourth Footer Widget Area, located in the footer. Empty by default.
 	register_sidebar( array(
-		'name' 		     	=> __( 'Fourth Footer Widget', 'storyboard' ),
-		'id' 			      => 'fourth-footer-widget',
+		'name' 		   	=> __( 'Fourth Footer Widget', 'storyboard' ),
+		'id' 			=> 'fourth-footer-widget',
 		'description' 	=> __( 'The fourth footer widget', 'storyboard' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',

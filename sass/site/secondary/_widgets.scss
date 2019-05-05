@@ -6,7 +6,7 @@
 	text-align: center;
 }
 .widget-area .calendar_wrap {
-	display: block;
+	display: inline;
 }
 .footer-widget-1,
 .footer-widget-2,
@@ -32,8 +32,8 @@
 	color: $color__link;
 }
 .widget a:hover {
-	color: white;
-	text-decoration: underline;
+	color: $color__link;
+	text-decoration: none;
 }
 .widget ul {
 	list-style: none;
@@ -75,8 +75,8 @@
 .search .search-field {
 	@include font-size(0.8);
 	color: $color__link-visited;
-	width: 100%;
 	text-align: center;
+	width: 100%;
 }
 .widget_search .search-submit {
 	display: none;
@@ -89,6 +89,7 @@
 	@include font-size(0.8);
 	line-height: 1.6;
 }
+
 .widget_calendar caption {
 	color: $color__dark-blue;
 	letter-spacing: 0.12em;
@@ -104,8 +105,8 @@
 .widget_calendar thead th a,
 .widget_calendar tbody td a {
 	background-color: #0ddb85;
-	border-style:double;
-	border-color: $color__link-hover;
+	color: #fff;
+	padding: 0.5rem;
 }
 .widget_calendar tbody td a:hover {
 	background-color: $color__link-hover;

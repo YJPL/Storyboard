@@ -40,7 +40,7 @@
 
 	</header><!-- .entry-header -->
 
-	<?php if ( is_home()) : // Display Excerpts for Search and blog posts ?>
+	<?php if ( is_search() || is_home() || is_category() || is_tag()) : // Display Excerpts for Search and blog posts ?>
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->

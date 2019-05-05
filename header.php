@@ -10,7 +10,7 @@
  */
 
 ?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> class="no-js">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,8 +52,8 @@ if ( $description || is_customize_preview() ) : ?>
 
 			<?php if ( has_nav_menu( 'primary' ) ) : ?>
 		<nav id="site-navigation" class="main-navigation clear" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Navigation', 'storyboard' ); ?></button>
-			<div><a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'storyboard' ); ?></a></div>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_attr_e( 'Navigation', 'storyboard' ); ?></button>
+			<div><a class="skip-link screen-reader-text" href="#content"><?php esc_attr_e( 'Skip to content', 'storyboard' ); ?></a></div>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->

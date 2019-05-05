@@ -1,74 +1,53 @@
-.gallery-item {
-    float: left;
-    margin: 0 6px 0 0;
-    padding: 0;
-    overflow: hidden;
-    position: relative;
+.gallery:after {content:"";display:table;clear:both;}
+
+.gallery figure img {max-width:100%; height:auto; margin:0 auto; display:block;}
+
+.gallery figure {float:left; margin:0 2% 1em 0;}
+
+.gallery.gallery-columns-1 figure {width:100%; margin:0 0 1em 0; float:none;}
+
+.gallery.gallery-columns-2 figure {width:48%;}
+.gallery.gallery-columns-2 figure:nth-of-type(even) {margin-right:0;}
+.gallery.gallery-columns-2 figure:nth-of-type(odd) {clear:left;}
+
+.gallery.gallery-columns-3 figure {width:32%;}
+.gallery.gallery-columns-3 figure:nth-of-type(3n+3) {margin-right:0;}
+.gallery.gallery-columns-3 figure:nth-of-type(3n+4) {clear:left;}
+
+.gallery.gallery-columns-4 figure {width:23.25%;}
+.gallery.gallery-columns-4 figure:nth-of-type(4n+4) {margin-right:0;}
+.gallery.gallery-columns-4 figure:nth-of-type(4n+5) {clear:left;}
+
+.gallery.gallery-columns-5 figure {width:18%;}
+.gallery.gallery-columns-5 figure:nth-of-type(5n+5) {margin-right:0;}
+.gallery.gallery-columns-5 figure:nth-of-type(5n+6) {clear:left;}
+
+.gallery.gallery-columns-6 figure {width:14.2%;}
+.gallery.gallery-columns-6 figure:nth-of-type(6n+6) {margin-right:0;}
+.gallery.gallery-columns-6 figure:nth-of-type(6n+7) {clear:left;}
+
+.gallery.gallery-columns-7 figure {width:12%;}
+.gallery.gallery-columns-7 figure:nth-of-type(7n+7) {margin-right:0;}
+.gallery.gallery-columns-7 figure:nth-of-type(7n+8) {clear:left;}
+
+.gallery.gallery-columns-8 figure {width:10.2%;}
+.gallery.gallery-columns-8 figure:nth-of-type(8n+8) {margin-right:0;}
+.gallery.gallery-columns-8 figure:nth-of-type(8n+9) {clear:left;}
+
+.gallery.gallery-columns-9 figure {width:8.85%;}
+.gallery.gallery-columns-9 figure:nth-of-type(9n+9) {margin-right:0;}
+.gallery.gallery-columns-9 figure:nth-of-type(9n+10) {clear:left;}
+
+@media (max-width:744px) {
+	img.alignright, div.alignright, figure.alignright, img.alignleft, div.alignleft, figure.alignleft, img.wp-post-image.attachment-thumb {display:block; margin:1em auto; float:none;}
+	.gallery.gallery-columns-2 figure, .gallery.gallery-columns-3 figure, .gallery.gallery-columns-4 figure, .gallery.gallery-columns-5 figure, .gallery.gallery-columns-6 figure, .gallery.gallery-columns-7 figure, .gallery.gallery-columns-8 figure, .gallery.gallery-columns-9 figure {width:100%; margin:0 0 1em 0; float:none;}
 }
-.gallery-item .gallery-icon.landscape {
-  line-height: 1.2; /* remove space between rows */
-}
-.gallery-columns-1 .gallery-item {
-    max-width: 100%;
-  }
 
-.gallery-columns-2 .gallery-item {
-    max-width: 48%;
-    max-width: calc(50% - 6px);
-  }
-
-.gallery-columns-3 .gallery-item {
-    max-width: 32%;
-    max-width: calc(33.3% - 6px);
-  }
-
-.gallery-columns-4 .gallery-item {
-    max-width: 23%;
-    max-width: calc(25% - 6px);
-  }
-
-.gallery-columns-5 .gallery-item {
-    max-width: 19%;
-    max-width: calc(20% - 6px);
-  }
-
-.gallery-columns-6 .gallery-item {
-    max-width: 15%;
-    max-width: calc(16.7% - 6px);
-  }
-
-.gallery-columns-7 .gallery-item {
-    max-width: 13%;
-    max-width: calc(14.28% - 6px);
-  }
-
-.gallery-columns-8 .gallery-item {
-    max-width: 11%;
-    max-width: calc(12.5% - 6px);
-  }
-
-.gallery-columns-9 .gallery-item {
-    max-width: 9%;
-    max-width: calc(11.1% - 6px);
-  }
-.gallery-columns-1 .gallery-item:nth-of-type(1n),
-.gallery-columns-2 .gallery-item:nth-of-type(2n),
-.gallery-columns-3 .gallery-item:nth-of-type(3n),
-.gallery-columns-4 .gallery-item:nth-of-type(4n),
-.gallery-columns-5 .gallery-item:nth-of-type(5n),
-.gallery-columns-6 .gallery-item:nth-of-type(6n),
-.gallery-columns-7 .gallery-item:nth-of-type(7n),
-.gallery-columns-8 .gallery-item:nth-of-type(8n),
-.gallery-columns-9 .gallery-item:nth-of-type(9n) {
-    margin-right: 0;
-}
-.gallery-columns-1 .gallery-size-medium figure.gallery-item:nth-of-type(1n+1),
-.gallery-columns-1 .gallery-size-thumbnail figure.gallery-item:nth-of-type(1n+1),
-.gallery-columns-2 .gallery-size-thumbnail figure.gallery-item:nth-of-type(2n+1),
-.gallery-columns-3 .gallery-size-thumbnail figure.gallery-item:nth-of-type(3n+1) {
-    clear: left;
-}
 .gallery-caption {
+	display:block; margin:1em auto;
+float:right; margin:1em 0 1em 2em;
+float:left; margin:1em 1em 2em 0;
+max-width: 100%; height: auto; margin:1em 0;
     background-color: rgba(255, 255, 255, 0.7);
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -80,7 +59,7 @@
     max-height: 50%;
     opacity: 0;
     padding: 6px 8px;
-    position: absolute;
+    position:  fixed;
     bottom: 0;
     left: 0;
     text-align: left;

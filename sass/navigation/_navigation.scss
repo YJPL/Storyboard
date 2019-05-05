@@ -90,8 +90,8 @@
 	background-color: white;
 	color: #004a66;
 	line-height: $font__line-height-body;
-  letter-spacing: 0.1em;
-  padding: 10px 12px;
+	letter-spacing: 0.1em;
+	padding: 10px 12px;
 	text-decoration: none;
 	text-transform: uppercase;
 	}
@@ -100,11 +100,11 @@
 .nav-next a:hover,
 .nav-previous-page a:hover,
 .nav-next-page a:hover {
-		background-color: black; /* instead of $color__link */
-    color: white;
-		letter-spacing: 0.1em;
-		padding: 10px 12px;
-		text-transform: uppercase;
+	background-color: black; /* instead of $color__link */
+	color: white;
+	letter-spacing: 0.1em;
+	padding: 10px 12px;
+	text-transform: uppercase;
 	}
 .page-numbers,
 .prev page-numbers,
@@ -114,21 +114,23 @@
 
 .story-title, .story-title a, .story-title li,
 .post-parent-title, .post-parent-title a {
-	color: black;
-	display: block;
+	display: inline-block;
+    margin: 0 auto;
 	font-size: 0.9rem;
 	line-height: 1.2;
-	margin: 0 auto;
-	padding-top: 0.4em;
 	letter-spacing: 0.12em;
-	margin: 0 auto;
-	text-align: center;
+	padding-bottom: 2em;
 	text-decoration: none;
 	text-transform: uppercase;
+	width: 100%;
 }
 
-.story-title a:hover, .post-parent-title a:hover {
+.post-parent-title, .post-parent-title a {
+	text-align: center;
 	color: $color__link;
+}
+.story-title a:hover, .post-parent-title a:hover {
+	color: $color__link-hover;
 }
 
 /* Can combine this with overflow-hidden to make background images grow on hover
