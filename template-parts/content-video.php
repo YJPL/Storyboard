@@ -6,7 +6,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( '' ); ?>>
 	<div class="entry-wrap wrap clear">
 
 
@@ -18,13 +18,13 @@
 
 	<header class="entry-header">
 		<?php
-		if (is_single()) {
-			the_title('<h1 class="entry-title">', '</h1>');
+		if ( is_single() ) {
+			the_title( '<h1 class="entry-title">', '</h1>' );
 		} else {
-			the_title('<h2 class="entry-title"><a href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</a></h2>');
+			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		}
 
-		if ('post' === get_post_type()) : ?>
+		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php storyboard_posted_on(); ?>
 		</div><!-- .entry-meta -->
@@ -34,11 +34,11 @@
 
 	<div class="entry-content">
 		<?php
-			the_content(sprintf(
+			the_content( sprintf(
 				/* translators: %s: Name of current post. */
-				wp_kses(__('Continue reading %s <span class="meta-nav">&rarr;</span>', 'storyboard'), array('span' => array('class' => array()))),
-				the_title('<span class="screen-reader-text">"', '"</span>', false)
-			));
+				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'storyboard' ), array( 'span' => array( 'class' => array() ) ) ),
+				the_title( '<span class="screen-reader-text">"', '"</span>', false )
+			) );
 		?>
 	</div><!-- .entry-content -->
 
@@ -47,11 +47,11 @@
 		</footer><!-- .entry-footer -->
 
 	<?php // use the excerpt to add credit text on video posts ?>
-	<?php if (has_excerpt()) : ?>
+	<?php if ( has_excerpt() ) : ?>
 		<div class="entry-summary">
-	<?php do_action('storyboard_formatted_posts_excerpt_before'); ?>
+	<?php do_action( 'storyboard_formatted_posts_excerpt_before' ); ?>
 	<?php the_excerpt(); ?>
-	<?php do_action('storyboard_formatted_posts_excerpt_after'); ?>
+	<?php do_action( 'storyboard_formatted_posts_excerpt_after' ); ?>
 		</div><!-- .entry-caption -->
 	<?php endif; ?>
 

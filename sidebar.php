@@ -7,7 +7,7 @@
  * @package Storyboard
  */
 
-if ( ! is_active_sidebar('sidebar')) {
+if ( ! is_active_sidebar( 'sidebar' ) ) {
 	return;
 }
 ?>
@@ -18,7 +18,7 @@ if ( ! is_active_sidebar('sidebar')) {
 
 		<div class="main-sidebar">
 
-	<?php dynamic_sidebar('sidebar'); ?>
+	<?php dynamic_sidebar( 'sidebar' ); ?>
 
 		</div>
 	</div><!-- .widget-wrap -->
