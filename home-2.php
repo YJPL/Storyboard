@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Home 2 columns
- * This template displays image thumbnails from posts in the "portfolio" category on the home page in a 2 columns grid.
+ * This template selects posts from the "portfolio" category and displays them on the home page in a 2 columns grid.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -41,10 +41,10 @@
 			$loop = new WP_Query( array(
 					'post_type'       => 'post',
 					'category_name'   => 'portfolio', // call a specific category (slug), uncomment if you want to show all posts.
-					'posts_per_page' 	=> 8, // changes default Blog pages number "reading settings" set in dashboard.
+					'posts_per_page'  => 8, // changes default Blog pages number "reading settings" set in dashboard.
 					'paged'           => $paged,
-					'orderby' 			  => 'date',
-					'order'				    => 'DESC',
+					'orderby' 		  => 'date',
+					'order'			  => 'DESC',
 				)
 			);
 
