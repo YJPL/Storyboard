@@ -16,8 +16,11 @@ if (isset($GLOBALS['content_width'])) {
 			<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr(sprintf(__('Permalink to %s', 'storyboard'), the_title_attribute('echo=0'))); ?>" rel="<?php the_ID(); ?>" class="storyboard-featured-thumbnail">
 				<?php the_post_thumbnail('featured'); ?>
 			</a>
-				<?php else : ?>
-					<?php the_post_thumbnail('featured'); ?>
+				<?php else {
+	: ?>
+					<?php the_post_thumbnail('featured');
+}
+?>
 					<?php endif; ?>
 					<?php endif; ?>
 

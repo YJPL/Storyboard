@@ -34,8 +34,10 @@ function storyboard_infinite_scroll_render() {
 		the_post();
 		if (is_search()) :
 			get_template_part('template-parts/content', 'search');
-		else :
+		else {
+			:
 			get_template_part('template-parts/content', get_post_format());
+		}
 		endif;
 	}
 }
