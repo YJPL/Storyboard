@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Home 2 columns
- * This template selects posts from the "portfolio" category and displays them on the home page in a 2 columns grid.
+ * Displays posts from the "portfolio" category on the home page in two columns.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
