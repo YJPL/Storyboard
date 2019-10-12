@@ -12,14 +12,14 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta charset="<?php bloginfo('charset'); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="<?php if ( is_single() ) {
-	single_post_title( '', true );
+<meta name="description" content="<?php if (is_single()) {
+	single_post_title('', true);
 } else {
-	bloginfo( 'name' );
+	bloginfo('name');
 	echo ' - ';
-	bloginfo( 'description' );
+	bloginfo('description');
 }
 	?>" />
 <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -39,8 +39,11 @@
 
 			<?php if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+			<?php else {
+	: ?>
+				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) );
+}
+?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 			<?php
 			endif;
 
