@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Home 4 columns
- * This template displays image thumbnails from posts in the "portfolio" category on the home page in a 4 columns grid.
+ * This template displays a 4 columns grid with image thumbnails from posts in the "portfolio" category on the home page.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
