@@ -98,28 +98,28 @@ if ( ! function_exists('storyboard_setup')) :
 	 *
 	 * @link: http://strip.org/clean-up-and-optimize-wordpress-for-your-next-theme
 	 */
-			remove_action( 'wp_head', 'wp_generator' );
-			remove_action( 'wp_head', 'wlwmanifest_link' );
-			remove_action( 'wp_head', 'rsd_link' );
-			remove_action( 'wp_head', 'wp_shortlink_wp_head' );
+			remove_action('wp_head', 'wp_generator');
+			remove_action('wp_head', 'wlwmanifest_link');
+			remove_action('wp_head', 'rsd_link');
+			remove_action('wp_head', 'wp_shortlink_wp_head');
 
-			remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10 );
+			remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10);
 
-			add_filter( 'the_generator', '__return_false' );
+			add_filter('the_generator', '__return_false');
 
-			remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
-			remove_action( 'wp_print_styles', 'print_emoji_styles' );
+			remove_action('wp_head', 'print_emoji_detection_script', 7);
+			remove_action('wp_print_styles', 'print_emoji_styles');
 
 	/**
 * This theme styles the visual editor to resemble the theme style,
 * specifically font, colors, icons, and column width.
 */
-	add_editor_style( array( '/assets/css/editor-style.css', '/assets/fonts/inconsolata.css' ) );
+	add_editor_style(array('/assets/css/editor-style.css', '/assets/fonts/inconsolata.css'));
 	// Indicate widget sidebars can use selective refresh in the Customizer.
-	add_theme_support( 'customize-selective-refresh-widgets' );
+	add_theme_support('customize-selective-refresh-widgets');
 
 endif; // storyboard_setup.
-add_action( 'after_setup_theme', 'storyboard_setup' );
+add_action('after_setup_theme', 'storyboard_setup');
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.

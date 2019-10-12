@@ -48,9 +48,11 @@ get_header(); ?>
 					)); ?>
 	</div>
 
-<?php else :
+<?php else {
+	:
 
 			get_template_part('template-parts/content', 'none');
+}
 
 		endif; ?>
 

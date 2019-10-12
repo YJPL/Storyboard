@@ -53,11 +53,14 @@ if ( ! function_exists('storyboard_header_style')) :
 		}
 	<?php
 		// If the user has set a custom color for the text use that.
-		else :
+		else {
+			:
 	?>
 		.site-title a,
 		.site-description {
-			color: #<?php echo esc_attr($header_text_color); ?>;
+			color: #<?php echo esc_attr($header_text_color);
+		}
+		?>;
 		}
 	<?php endif; ?>
 	</style>
