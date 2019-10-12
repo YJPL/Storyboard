@@ -61,15 +61,15 @@ function disable_emojis_tinymce($plugins) {
 	 * @param string $relation_type The relation type the URLs are printed for.
 	 * @return array Difference betwen the two arrays.
 	 */
-function disable_emojis_remove_dns_prefetch( $urls, $relation_type ) {
-	if ( 'dns-prefetch' !== $relation_type ) { /** This filter is documented in wp-includes/formatting.php */
-		$emoji_svg_url = apply_filters( 'emoji_svg_url', 'https://s.w.org/images/core/emoji/2/svg/' );
-		$urls = array_diff( $urls, array( $emoji_svg_url ) );
+function disable_emojis_remove_dns_prefetch($urls, $relation_type) {
+	if ('dns-prefetch' !== $relation_type) { /** This filter is documented in wp-includes/formatting.php */
+		$emoji_svg_url = apply_filters('emoji_svg_url', 'https://s.w.org/images/core/emoji/2/svg/');
+		$urls = array_diff($urls, array($emoji_svg_url));
 	}
 	return $urls; }
 
 	//Adding the Open Graph in the Language Attributes
-	function add_opengraph_doctype( $output ) {
+	function add_opengraph_doctype($output) {
 			return $output . ' xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"';
 		}
 	add_filter('language_attributes', 'add_opengraph_doctype');
@@ -78,22 +78,22 @@ function disable_emojis_remove_dns_prefetch( $urls, $relation_type ) {
 
 	function insert_fb_in_head() {
 		global $post;
-		if ( !is_singular()) //if it is not a post or a page
+		if ( ! is_singular()) //if it is not a post or a page
 			return;
 			echo '<meta property="fb:admins" content="172189793548569"/>';
 			echo '<meta property="og:title" content="' . get_the_title() . '"/>';
 			echo '<meta property="og:type" content="article"/>';
 			echo '<meta property="og:url" content="' . get_permalink() . '"/>';
 			echo '<meta property="og:site_name" content="Film Storyboards"/>';
-		if(!has_post_thumbnail( $post->ID )) { //the post does not have featured image, use a default image
-			$default_image="https://film-storyboards.com/wp-content/uploads/2017/07/dancing-feet-storyboard_063.jpg"; //replace this with a default image on your server or an image in your media library
+		if ( ! has_post_thumbnail($post->ID)) { //the post does not have featured image, use a default image
+			$default_image = "https://film-storyboards.com/wp-content/uploads/2017/07/dancing-feet-storyboard_063.jpg"; //replace this with a default image on your server or an image in your media library
 			echo '<meta property="og:image" content="' . $default_image . '"/>';
 		}
-		else{
-			$thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
-			echo '<meta property="og:image" content="' . esc_attr( $thumbnail_src[0] ) . '"/>';
+		else {
+			$thumbnail_src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium');
+			echo '<meta property="og:image" content="' . esc_attr($thumbnail_src[0]) . '"/>';
 		}
 		echo "
 	";
 	}
-	add_action( 'wp_head', 'insert_fb_in_head', 5 );
+	add_action('wp_head', 'insert_fb_in_head', 5);
