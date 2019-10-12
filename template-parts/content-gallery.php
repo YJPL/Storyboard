@@ -11,16 +11,6 @@ if ( isset( $GLOBALS['content_width'] ) ) {
 		$GLOBALS['content_width'] = 1272;
 }
 	?>
-			<?php if ( '' !== get_the_post_thumbnail( 'featured' ) ) : ?>
-				<?php if ( ! is_single() ) : ?>
-			<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'storyboard' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="<?php the_ID(); ?>" class="storyboard-featured-thumbnail">
-				<?php the_post_thumbnail( 'featured' ); ?>
-			</a>
-				<?php else : ?>
-					<?php the_post_thumbnail( 'featured' ); ?>
-					<?php endif; ?>
-					<?php endif; ?>
-
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-wrap wrap clear">
