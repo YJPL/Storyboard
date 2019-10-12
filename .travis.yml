@@ -10,9 +10,11 @@ language: php
 
 # Declare versions of PHP to use. Use one decimal max.
 php:
-    - nightly # PHP 7.0
-    # Current $required_php_version for WordPress: 5.6
-    - "5.6"
+  - 5.6
+  - 7.0
+  - 7.1
+  - 7.2
+  - "7.4snapshot"
 
 # Ditch sudo and use containers.
 # @link http://docs.travis-ci.com/user/migrating-from-legacy/#Why-migrate-to-container-based-infrastructure%3F
