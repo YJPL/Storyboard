@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Home 3 columns
- * This template displays image thumbnails from posts in the "portfolio" category on the home page in a 3 columns grid.
+ * Select an image thumbnail from each post in the "portfolio" category to display in a 3 columns grid on the home index.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
