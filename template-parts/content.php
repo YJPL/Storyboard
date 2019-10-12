@@ -17,8 +17,11 @@
 			<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'storyboard' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="<?php the_ID(); ?>" class="storyboard-featured-thumbnail">
 				<?php the_post_thumbnail( 'featured' ); ?>
 			</a>
-				<?php else : ?>
-					<?php the_post_thumbnail( 'featured' ); ?>
+				<?php else {
+	: ?>
+					<?php the_post_thumbnail( 'featured' );
+}
+?>
 					<?php endif; ?>
 					<?php endif; ?>
 
@@ -40,11 +43,12 @@
 
 	</header><!-- .entry-header -->
 
-	<?php if ( is_search() || is_home() || is_category() || is_tag()) : // Display Excerpts for Search and blog posts ?>
+	<?php if (is_search() || is_home() || is_category() || is_tag()) : // Display Excerpts for Search and blog posts ?>
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->
-	<?php else : ?>
+	<?php else {
+	: ?>
 
 	<div class="entry-content">
 		<?php
@@ -53,6 +57,7 @@
 				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'storyboard' ), array( 'span' => array( 'class' => array() ) ) ),
 				the_title( '<span class="screen-reader-text">"', '"</span>', false )
 			) );
+}
 
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'storyboard' ),
