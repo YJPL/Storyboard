@@ -272,9 +272,8 @@ require get_template_directory() . '/inc/jetpack.php';
 function get_first_image() {
 	global $post, $posts;
 	$first_img = '';
-
-	if ( $output = preg_match_all( '@src="([^"]+)"@' , do_shortcode( $post->post_content, 'gallery' ), $matches ) ) {	$first_img = $matches [1][0];
-	}
+	preg_match_all( '@src="([^"]+)"@' , do_shortcode( $post->post_content, 'gallery' ), $matches );
+	  $first_img = isset( $matches[1][0] ) ? $matches[1][0] : null;
 	if ( empty( $first_img ) ) {
 			return get_template_directory_uri() . '/assets/images/empty.png'; // path to default image.
 	}
