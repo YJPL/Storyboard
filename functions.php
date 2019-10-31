@@ -273,7 +273,7 @@ function get_first_image() {
 	global $post, $posts;
 	$first_img = '';
 
-	if ( $output = preg_match_all( '/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', do_shortcode( $post->post_content, 'gallery' ), $matches ) ) {	$first_img = $matches [1][0];
+	if ( $output = preg_match_all( '@src="([^"]+)"@' , do_shortcode( $post->post_content, 'gallery' ), $matches ) ) {	$first_img = $matches [1][0];
 	}
 	if ( empty( $first_img ) ) {
 			return get_template_directory_uri() . '/assets/images/empty.png'; // path to default image.
