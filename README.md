@@ -47,5 +47,3 @@ Add your own SVG logo in BASE64 code into the `inline-logo.svg.php` file provide
 You can use a free online service to translate your SVG logo into BASE64 code, and paste it to replace the sample in `inline-logo.svg.php`. Your SVG logo will then appear in the left-hand corner of your site.
 
 You can also add a custom image logo from the customizer. Go to site identity → logo, or use the site text title + description.
-
-You can see an overview of this theme at: [https://film-storyboards.com/demo](https://film-storyboards.com/demo)
