@@ -14,11 +14,6 @@ Tags: white, light, one-column, flexible-header, responsive-layout, custom-backg
 
 Storyboard is a WordPress theme originally designed for the [Film Storyboards portfolio site](https://film-storyboards.com "Film Storyboards portfolio site") (this site is now written in Jekyll). 
 
-
-Live Demo:
--------------------------
-[https://film-storyboards.fr](https://film-storyboards.fr "Film Storyboards & scénarimages — portfolio site")
-
 == Description ==
 
 1. A lean portfolio theme to display posts in the ‘portfolio’ category on a two, three or four columns grid on the home page.
